@@ -80,7 +80,7 @@ def test_density_of_mixture():
         density, hs.material.density_of_mixture(wt, elements)[0, 0])
     
     # Testing whether the correct exception is raised upon unknown density
-    elements = ("Cu", "Sn", "As")
+    elements = ("Cu", "Sn", "At")
     wt = (87., 12., 1.)
     with pytest.raises(ValueError):
         hs.material.density_of_mixture(wt,elements)
